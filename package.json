@@ -1,7 +1,7 @@
 {
     "name": "react-hrnet-modal",
     "version": "1.0.0",
-    "description": "A simple React modal component inspired by kylefox/jquery-modal, used in the HRnet application.",
+    "description": "Un composant modal React simple inspiré de kylefox/jquery-modal, utilisé dans l'application HRnet.",
     "main": "src/index.js",
     "module": "src/index.js",
     "keywords": [
@@ -13,7 +13,7 @@
       "kylefox",
       "component"
     ],
-    "author": "Ton Nom <ton.email@example.com>",
+    "author": "il.legliltech@gmail.com ",
     "license": "MIT",
     "peerDependencies": {
       "react": ">=17.0.0",

@@ -30,6 +30,7 @@ import { useEffect } from "react";
 import "./Modal.css";
 
 export default function Modal({ isOpen, onClose, title, children }) {
+  console.log("Modal depuis NPM ");
   // Écoute de la touche Échap pour fermer la modale, comme avec jquery-modal
   useEffect(() => {
     if (!isOpen) return;

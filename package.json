@@ -1,26 +1,25 @@
 {
     "name": "react-hrnet-modal",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Un composant modal React simple inspiré de kylefox/jquery-modal, utilisé dans l'application HRnet.",
     "main": "src/index.js",
     "module": "src/index.js",
     "keywords": [
-      "react",
-      "modal",
-      "dialog",
-      "hrnet",
-      "jquery-modal",
-      "kylefox",
-      "component"
+        "react",
+        "modal",
+        "dialog",
+        "hrnet",
+        "jquery-modal",
+        "kylefox",
+        "component"
     ],
     "author": "il.legliltech@gmail.com ",
     "license": "MIT",
     "peerDependencies": {
-      "react": ">=17.0.0",
-      "react-dom": ">=17.0.0"
+        "react": ">=17.0.0",
+        "react-dom": ">=17.0.0"
     },
     "scripts": {
-      "test": "echo \"No tests specified\" && exit 0"
+        "test": "echo \"No tests specified\" && exit 0"
     }
-  }
-  
+}

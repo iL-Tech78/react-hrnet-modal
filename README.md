@@ -76,7 +76,19 @@ export default Example;
 ###### Component API
 
 ```jsx
-<Modal isOpen={isOpen} onClose={handleClose} title="Optional title">
+<Modal
+  isOpen={isOpen}
+  onClose={handleClose}
+  title="Optional title"
+  /* Props de customisation */
+  overlayClassName="my-overlay"
+  modalClassName="my-modal"
+  titleClassName="my-title"
+  bodyClassName="my-body"
+  closeButtonClassName="my-close"
+  overlayStyle={{ backgroundColor: "rgba(0,0,0,0.5)" }}
+  modalStyle={{ borderRadius: "20px" }}
+>
   Modal content goes here.
 </Modal>
 ```
@@ -99,16 +111,52 @@ export default Example;
 
 ---
 
-###### ## Style
+###### ## Personnalisation du style
 
-Le composant importe automatiquement Modal.css.
-Les classes peuvent être modifiées ou étendues :
+La modale inclut un style par défaut via Modal.css, mais vous pouvez surcharger ou remplacer ces styles.
+Option 1 — Via des classnames personnalisées
 
-.hrnet-modal-overlay
-.hrnet-modal
-.hrnet-modal**close-button
-.hrnet-modal**title
-.hrnet-modal\_\_body
+```jsx
+<Modal
+  isOpen={isOpen}
+  onClose={close}
+  modalClassName="custom-box"
+  overlayClassName="custom-overlay"
+  closeButtonClassName="custom-close"
+>
+  Custom modal
+</Modal>
+```
+
+Exemple CSS utilisateur :
+
+.custom-overlay {
+background: rgba(0, 0, 0, 0.4);
+}
+
+.custom-box {
+background: white;
+border-radius: 20px;
+padding: 40px;
+max-width: 650px;
+}
+
+.custom-close {
+background: transparent;
+color: red;
+font-size: 26px;
+}
+
+Option 2 — Via des styles inline
+
+```jsx
+<Modal
+  isOpen={open}
+  onClose={close}
+  modalStyle={{ padding: "40px", borderRadius: "12px" }}
+  overlayStyle={{ backgroundColor: "rgba(0,0,0,0.6)" }}
+/>
+```
 
 ---
 
